@@ -47,11 +47,19 @@ codeSnip.src = "img/header-img.png";
 
 let navMenu = document.querySelectorAll('a');
 navMenu[0].textContent = siteContent['nav']['nav-item-1'];
+navMenu[0].style.color= 'green';
 navMenu[1].textContent = siteContent['nav']['nav-item-2'];
+navMenu[1].style.color= 'green';
 navMenu[2].textContent = siteContent['nav']['nav-item-3'];
+navMenu[2].style.color= 'green';
 navMenu[3].textContent = siteContent['nav']['nav-item-4'];
+navMenu[3].style.color= 'green';
 navMenu[4].textContent = siteContent['nav']['nav-item-5'];
+navMenu[4].style.color= 'green';
 navMenu[5].textContent = siteContent['nav']['nav-item-6'];
+navMenu[5].style.color= 'green';
+
+
 
 const dom= document.querySelector('h1');
 dom.textContent = siteContent['cta']['h1'];
@@ -93,3 +101,14 @@ footerP[8].textContent = siteContent['footer']['copyright'];
 
 const contact = document.querySelector('.contact');
 contact.style.width = '9rem';
+
+
+const addNav = document.querySelector('nav');
+const addNavA= document.createElement('a');
+addNavA.textContent= 'Visit Us';
+addNavA.style.color= 'green';
+addNav.appendChild(addNavA);
+const addNavB= document.createElement('a');
+addNavB.textContent= 'Guide';
+addNavB.style.color= 'green';
+addNav.appendChild(addNavB);
